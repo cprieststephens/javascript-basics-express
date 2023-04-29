@@ -29,12 +29,12 @@ app.get('/strings/lower/:string', (req, res) => {
 });
 
 app.get('/strings/first-characters/:string', (req, res) => {
-  res.status(200).json({ result: firstCharacter(req.params.string) });
-});
-
-app.get('/strings/first-characters/:string', (req, res) => {
-  const n = parseInt(req.query.length, 10);
-  res.status(200).json({ result: firstCharacters(req.params.string, n) });
+  const n = req.query.length;
+  if (req.query.length) {
+    res.status(200).json({ result: firstCharacters(req.params.string, n) });
+  } else {
+    res.status(200).json({ result: firstCharacter(req.params.string) });
+  }
 });
 
 // Numbers
