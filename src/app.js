@@ -8,7 +8,7 @@ const {
   firstCharacters,
 } = require('./lib/strings');
 
-const { add } = require('./lib/numbers');
+const { add, multiply } = require('./lib/numbers');
 
 const app = express();
 
@@ -47,6 +47,10 @@ app.get('/numbers/add/:a/and/:b', (req, res) => {
   } else {
     res.status(200).json({ result: add(a, b) });
   }
+});
+
+app.post('/numbers/multiply', (req, res) => {
+  res.status(200).json({ result: multiply(req.body.a, req.body.b) });
 });
 
 module.exports = app;
