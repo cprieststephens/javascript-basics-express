@@ -9,7 +9,7 @@ The starter files and end-to-end tests were cloned from: https://github.com/Comm
 ### Clone this repository
 
 - Create a fork of this repo.
-- Clone your copy of the repo using the command: `git clone git@github.com:_your-github-username_/javascript-basics-express
+- Clone your copy of the repo using the command: `git clone git@github.com:_your-github-username_/javascript-basics-express`
 
 ### Install the project dependencies
 
@@ -34,7 +34,4 @@ To run the tests for each group of controller functions, use the commands:
 - Check each controller function to see whether you need to make a GET request or POST request
 - For GET requests, you can add your own parameters to the route. Parameters are indicated by a colon e.g. `/numbers/subtract/:b/from/:a`.
 - For POST requests, you will need to add information to the request body. Select `Body` and `raw`, then select `JSON` from the dropdown. Check the corresponding end-to-end test to see what data is needed. It should be written in JSON format e.g
-
-{
-"value": true
-}
+  {"value": true}
