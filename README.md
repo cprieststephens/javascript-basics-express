@@ -1,38 +1,40 @@
 # JavaScript Basics in Express
 
+This repository contains a series of controller functions I wrote using Express to create API endpoints for an application. It uses functions from my JavaScript Basics code, which are called when each controller function runs.
+
+The starter files and end-to-end tests were cloned from: https://github.com/CommandShiftHQ/javascript-basics-express
+
 ## Getting started
 
-Ensure your Visual Studio Code application is up to date, and that you have the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) installed and enabled.
+### Clone this repository
 
-Run the commands below inside your `Projects` folder.
+- Create a fork of this repo.
+- Clone your copy of the repo using the command: `git clone git@github.com:_your-github-username_/javascript-basics-express
 
-```bash
-git clone git@github.com:MCRcodes/javascript-basics-express.git
-cd your-project-folder-name
-npm install
-```
+### Install the project dependencies
 
-## Copy over your JavaScript Basics code
+Use the command `npm install` to download the project's dependencies.
 
-:rotating_light: **Important!**
+## Run the test code
 
-This exercise makes use of your previous `javascript-basics` code. Copy the files from that project's `src/` folder into a new `lib/` directory in this repository's `src` directory. You should end up with the following file structure in this project:
+Use the command `npm test` to run the Jest end-to-end tests.
 
-```
-src
-├── app.js
-└── lib
-    ├── arrays.js
-    ├── booleans.js
-    ├── numbers.js
-    ├── objects.js
-    └── strings.js
-```
+To run the tests for each group of controller functions, use the commands:
 
-## Running tests
+- `npm test -- strings`
+- `npm test -- numbers`
+- `npm test -- booleans`
+- `npm test -- arrays`
 
-You can run tests with the `npm test` command.
+## Check the routes with Postman
 
-## Remember: READMEs are important!
+- Use the command `npm start` to start your server
+- Open Postman and enter http://localhost:3000
+- Add the path specified in the controller function e.g. `/numbers/multiply`
+- Check each controller function to see whether you need to make a GET request or POST request
+- For GET requests, you can add your own parameters to the route. Parameters are indicated by a colon e.g. `/numbers/subtract/:b/from/:a`.
+- For POST requests, you will need to add information to the request body. Select `Body` and `raw`, then select `JSON` from the dropdown. Check the corresponding end-to-end test to see what data is needed. It should be written in JSON format e.g
 
-When you're finished, be sure to rewrite this one so it's more specific to your project.
+{
+"value": true
+}
