@@ -40,7 +40,7 @@ app.get('/strings/lower/:string', (req, res) => {
 
 app.get('/strings/first-characters/:string', (req, res) => {
   const n = req.query.length;
-  if (req.query.length) {
+  if (n) {
     res.status(200).json({ result: firstCharacters(req.params.string, n) });
   } else {
     res.status(200).json({ result: firstCharacter(req.params.string) });
