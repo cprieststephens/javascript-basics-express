@@ -38,22 +38,22 @@ To run the tests for each group of controller functions, use the commands:
 
 ### Strings
 
-| Route                              | HTTP Verb | Description                                                           |
-| ---------------------------------- | --------- | --------------------------------------------------------------------- |
-| `/strings/hello/:string`           | GET       | Returns `Hello ${string}`                                             |
-| `/strings/upper/:string`           | GET       | Returns the string in all uppercase                                   |
-| `/strings/lower/:string`           | GET       | Returns the string in all lowercase                                   |
-| `strings/first-characters/:string` | GET       | Returns a given number of characters from the beginning of the string |
+| Route                               | HTTP Verb | Description                                                           |
+| ----------------------------------- | --------- | --------------------------------------------------------------------- |
+| `/strings/hello/:string`            | GET       | Returns `Hello ${string}`                                             |
+| `/strings/upper/:string`            | GET       | Returns the string in all uppercase                                   |
+| `/strings/lower/:string`            | GET       | Returns the string in all lowercase                                   |
+| `/strings/first-characters/:string` | GET       | Returns a given number of characters from the beginning of the string |
 
 ### Numbers
 
-| Route                          | HTTP Verb | Description                                            |
-| ------------------------------ | --------- | ------------------------------------------------------ |
-| `/numbers/add/:a/and/:b`       | GET       | Adds two numbers                                       |
-| `/numbers/subtract/:b/from/:a` | GET       | Subtracts one number from another number               |
-| `/numbers/multiply`            | POST      | Multiplies two numbers                                 |
-| `/numbers/divide`              | POST      | Divides one number by another                          |
-| `/numbers/remainder`           | POST      | Gives the remainder of dividiing one number by another |
+| Route                          | HTTP Verb | Description                                           |
+| ------------------------------ | --------- | ----------------------------------------------------- |
+| `/numbers/add/:a/and/:b`       | GET       | Adds two numbers                                      |
+| `/numbers/subtract/:b/from/:a` | GET       | Subtracts one number from another number              |
+| `/numbers/multiply`            | POST      | Multiplies two numbers                                |
+| `/numbers/divide`              | POST      | Divides one number by another                         |
+| `/numbers/remainder`           | POST      | Gives the remainder of dividing one number by another |
 
 ### Booleans
 
