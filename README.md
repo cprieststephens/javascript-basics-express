@@ -1,6 +1,6 @@
 # JavaScript Basics in Express
 
-This repository contains a series of controller functions I wrote using Express to create API endpoints for an application. It uses functions from my JavaScript Basics code, which are called when each controller function runs.
+This repository contains a series of controller functions I wrote using Express for Command Shift bootcamp. Each of these controllers invokes a function from my JavaScript Basics code.
 
 The starter files and end-to-end tests were cloned from: https://github.com/CommandShiftHQ/javascript-basics-express
 
@@ -9,7 +9,7 @@ The starter files and end-to-end tests were cloned from: https://github.com/Comm
 ### Clone this repository
 
 - Create a fork of this repo.
-- Clone your copy of the repo using the command: `git clone git@github.com:_your-github-username_/javascript-basics-express`
+- Copy the fork's git address and clone to your machine using `git clone`.
 
 ### Install the project dependencies
 
